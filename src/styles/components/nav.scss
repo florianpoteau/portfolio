@@ -1,0 +1,46 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: 4%;
+  gap: 10%;
+  margin-top: 1%;
+  margin-right: 5%;
+  margin-bottom: 150px;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-right p {
+  cursor: pointer;
+}
+
+.nav-right p:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.avatar {
+  width: 75%;
+  cursor: pointer;
+}
+
+.nav-container a {
+  width: 10%;
+}
+
+.light-dark {
+  margin-left: auto;
+  margin-right: 4%;
+  display: flex;
+}
+
+.light-dark:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
