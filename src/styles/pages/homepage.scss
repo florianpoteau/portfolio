@@ -15,5 +15,66 @@
 .avatar-homepage {
   display: block;
   margin: auto;
-  width: 15%;
+  width: 17%;
+  margin-bottom: 100px;
+}
+
+.devices {
+  display: block;
+  margin: auto;
+  width: 65%;
+}
+
+.container-my-description {
+  background-color: $primary-color;
+  padding: 9% 5% 15% 5%;
+}
+
+.container-my-description h2,
+.container-my-description p {
+  text-align: center;
+  color: white;
+}
+
+.container-my-description h2 {
+  font-size: 25px;
+}
+
+.container-my-description p {
+  margin: auto;
+  width: 68%;
+  line-height: 2;
+  padding-top: 1%;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+
+.section-skills {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: -10rem;
+  background-color: #ffffff;
+  border-radius: 1.5%;
+  width: 95%;
+  min-height: 1000px;
+  border: 0.5px solid #e6ecf8;
+}
+
+.flex-skills {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.flex-skills p {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid #e6ecf8;
+  margin-top: 0;
+}
+
+.flex-skills p:last-child {
+  border-right: none;
 }
