@@ -2,7 +2,7 @@
   font-family: "poppins-bold";
   text-align: center;
   font-size: 40px;
-  color: #141c3a;
+  color: $text-color;
   margin-bottom: 0;
 }
 
@@ -55,26 +55,65 @@
   margin: 0 auto;
   margin-top: -10rem;
   background-color: #ffffff;
-  border-radius: 1.5%;
+  border-radius: 20px;
   width: 95%;
-  min-height: 1000px;
+  min-height: 750px;
   border: 0.5px solid #e6ecf8;
+  margin-bottom: 50px;
 }
 
 .flex-skills {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  align-items: baseline;
 }
 
-.flex-skills p {
+.icon-skill {
   flex: 1;
   text-align: center;
   padding: 20px;
   border-right: 1px solid #e6ecf8;
   margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 750px;
 }
 
-.flex-skills p:last-child {
+.icon-skill:last-child {
   border-right: none;
+}
+
+.container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  margin-top: 15%;
+}
+
+.container-image img {
+  width: 60%;
+}
+
+.icon-skill h2 {
+  font-family: "poppins-bold";
+  margin-top: 6%;
+  margin-bottom: 8%;
+  font-size: 20px;
+  color: $text-color;
+}
+
+.language {
+  margin-top: 15%;
+  color: $text-color-light;
+}
+
+.tools p {
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
