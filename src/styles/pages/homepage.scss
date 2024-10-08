@@ -1,5 +1,5 @@
 .job {
-  font-family: "poppins-bold";
+  font-family: 'poppins-bold';
   text-align: center;
   font-size: 40px;
   color: $text-color;
@@ -101,7 +101,7 @@
 }
 
 .icon-skill h2 {
-  font-family: "poppins-bold";
+  font-family: 'poppins-bold';
   margin-top: 6%;
   margin-bottom: 8%;
   font-size: 20px;
@@ -251,7 +251,7 @@ textarea {
 }
 
 textarea {
-  font-family: "europa", sans-serif;
+  font-family: 'europa', sans-serif;
   resize: vertical;
   min-height: 250px;
   max-height: 500px;
@@ -277,8 +277,10 @@ textarea:focus {
   border: 2px solid #6e07f3;
   color: #6e07f3;
   font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "europa", sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  font-family: 'europa', sans-serif;
 }
 
 .submit-button:hover {

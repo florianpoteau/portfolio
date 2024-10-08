@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "poppins-regular";
+  font-family: 'poppins-regular';
   src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-  font-family: "poppins-bold";
+  font-family: 'poppins-bold';
   src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
@@ -19,7 +19,7 @@ $text-color-light: #6e07f3;
 }
 
 body {
-  font-family: "poppins-regular", sans-serif;
+  font-family: 'poppins-regular', sans-serif;
   background-color: var(--body-backgroundColor);
   margin: 0;
 }
