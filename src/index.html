@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mon portfolio</title>
   <link rel="stylesheet" href="styles/index.scss" />
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body class="light-theme">
@@ -163,21 +164,21 @@
     <p class="form-intro">
       Vous pouvez remplir le formulaire de contact ci-dessous.
     </p>
-    <form class="contact-me-form" action="">
+    <form class="contact-me-form" id="contact-me-form" action="post">
       <div class="column-is-centered">
         <div class="column-is-half">
           <label for="name">Nom</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" minlength="2" maxlength="50" required />
         </div>
         <div class="column-is-half">
           <label for="firstname">Prénom</label>
-          <input type="firstname" name="firstname" id="firstname" />
+          <input type="firstname" name="firstname" id="firstname" minlength="2" maxlength="50" required />
         </div>
       </div>
       <div class="column-is-centered">
         <div class="column-is-half textarea">
           <label for="details">Votre message</label>
-          <textarea name="details" id="details"></textarea>
+          <textarea name="details" id="details" minlength="10" maxlength="500" required></textarea>
         </div>
       </div>
       <div class="column-is-centered button-position">
@@ -186,6 +187,8 @@
     </form>
   </section>
   <script src="index.js"></script>
+  <script type="module" src="sendemail.js"></script>
+  <div id="loading-spinner" class="spinner" style="display: none"></div>
 </body>
 
 </html>

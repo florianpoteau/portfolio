@@ -292,3 +292,35 @@ textarea:focus {
 .button-position {
   margin-top: 50px;
 }
+
+// Cercle de chargement
+
+.spinner {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 8px solid #dedede;
+  border-top: 8px solid $primary-color;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: rotation 1s linear infinite;
+  position: fixed;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.body-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
