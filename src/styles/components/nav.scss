@@ -25,22 +25,7 @@
 }
 
 .avatar {
-  width: 75%;
-  cursor: pointer;
-}
-
-.nav-container a {
-  width: 10%;
-}
-
-.light-dark {
-  width: 20px;
-  height: 20px;
-}
-
-.light-dark:hover {
-  transform: scale(1.2);
-  transition: transform 0.1s ease;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -52,13 +37,21 @@
   padding-bottom: 15px;
   width: 55%;
   font-size: 15px;
-  background-color: $secondary-color;
+  background-color: var(--body-backgroundColor);
+  border: 2px solid $primary-color;
   cursor: pointer;
+  text-decoration: none;
+  color: $primary-color;
+  text-align: center;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .download-cv:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: white;
 }
 
 .cv-theme {
