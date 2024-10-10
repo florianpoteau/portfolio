@@ -1,0 +1,55 @@
+footer {
+  background-color: $primary-color;
+  padding: 20px;
+  padding-top: 6%;
+  padding-bottom: 5%;
+}
+
+.flex-social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.circle-social-network {
+  width: 50px;
+  height: 50px;
+  background-color: $primary-color;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.circle-social-network:hover {
+  border-color: white;
+  background-color: white;
+}
+
+.circle-social-network:hover .social-network {
+  color: $primary-color;
+}
+
+.social-network {
+  color: white;
+  font-size: 24px;
+}
+
+.codewars-logo {
+  width: 80%;
+}
+
+.codewars-logo {
+  filter: invert(1) brightness(2) saturate(0); /* Inverser et saturer pour obtenir du blanc */
+}
+
+.circle-social-network:hover .codewars-logo {
+  filter: none;
+}

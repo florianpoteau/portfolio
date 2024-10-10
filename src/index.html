@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon portfolio</title>
+  <link rel="stylesheet" href="styles/index.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous">
+
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body class="light-theme">
+  <nav>
+    <div class="nav-container">
+      <a href="/">
+        <img class="avatar" src="assets/icons/avatar.svg" alt="avatar" />
+      </a>
+      <div class="nav-right">
+        <p>Qui suis-je ?</p>
+        <p>Mes projets</p>
+        <p>Me contacter</p>
+      </div>
+      <div class="cv-theme">
+        <img class="light-dark" src="assets/icons/symbole-de-temps-soleil.png" alt="light-dark-theme" />
+        <button class="download-cv">Télécharger le CV</button>
+      </div>
+    </div>
+  </nav>
+  <p class="job">Concepteur, développeur d'applications</p>
+  <p class="intro">
+    Je conçois et code des idées simples qui se démarquent, et j'aime ça.
+  </p>
+  <img class="avatar-homepage" src="assets/icons/avatar.svg" alt="avatar homepage" />
+  <img class="devices" src="assets/icons/devices.svg" alt="devices-services" />
+  <div class="container-my-description">
+    <h2>Salut, je suis Florian Poteau, ravi de te rencontrer</h2>
+    <p>
+      Ancien boulanger-pâtissier, je me suis reconverti en concepteur
+      développeur d'applications. Grâce à plusieurs formations et stages, je
+      suis capable de concevoir et de développer une application ou un site
+      web de A à Z. Curieux et perspicace, j'aime apprendre et serais ravi de
+      rejoindre une entreprise qui saura m'accueillir.
+    </p>
+  </div>
+  <section class="section-skills">
+    <div class="flex-skills">
+      <div class="icon-skill">
+        <div class="container-image">
+          <img src="assets/icons/programmation-web.svg" alt="front-end-code" />
+        </div>
+        <h2>Développeur frontend</h2>
+        <p>
+          J'aime coder des choses à partir de zéro et j'aime donner vie à des
+          idées dans le navigateur.
+        </p>
+        <p class="language">Les langues que je parle:</p>
+        <p>HTML, CSS, Javascript, Typescript, Sass</p>
+        <p class="language">Frameworks et bibliothèques que j'utilise:</p>
+        <div class="tools">
+          <p>ReactJS</p>
+          <p>Flutter</p>
+          <p>NodeJS</p>
+          <p>Material Design</p>
+          <p>Tailwind</p>
+          <p>Bootstrap</p>
+          <p>Bulma</p>
+        </div>
+      </div>
+      <div class="icon-skill">
+        <div class="container-image">
+          <img src="assets/icons/codage-back-end.svg" alt="back-end-code" />
+        </div>
+        <h2>Développeur backend</h2>
+        <p>
+          Je crée des systèmes efficaces et j'aime relever des défis
+          techniques pour assurer que tout fonctionne parfaitement.
+        </p>
+        <p class="language">Les langues que je parle:</p>
+        <p>Java, PHP, Dart</p>
+        <p class="language">Frameworks et bibliothèques que j'utilise:</p>
+        <div class="tools">
+          <p>Symfony</p>
+          <p>Api-Platform</p>
+          <p>DiscordJS</p>
+          <p>SpringBoot</p>
+        </div>
+      </div>
+      <div class="icon-skill">
+        <div class="container-image">
+          <img src="assets/icons/base-de-donnees.svg" alt="base-de-données" />
+        </div>
+        <h2>Base de données</h2>
+        <p>
+          J'organise les données de façon sécurisée et efficace, pour qu'elles
+          soient prêtes à soutenir les applications.
+        </p>
+        <p class="language">Les bases de données que j'utilise:</p>
+        <p>MySQL, PostgreSQL, Firestore</p>
+        <p class="language">Systèmes de gestions de base de données:</p>
+        <div class="tools">
+          <p>PgAdmin</p>
+          <p>MySQL Workbench</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 class="projects-title">Mes projets réalisés</h2>
+    <p class="some-projects">Voici quelques projets que j'ai réalisés.</p>
+    <section class="carousels">
+      <section class="carousel-container">
+        <div class="carousel">
+          <img class="carousel-image" src="assets/icons/gamebots/gamebots.svg" alt="Gamebots" />
+          <img class="carousel-image" src="assets/icons/gamebots/connexion.png" alt="Image 1" />
+          <img class="carousel-image" src="assets/icons/gamebots/homepage.png" alt="Image 2" />
+          <img class="carousel-image" src="assets/icons/gamebots/chatbot.png" alt="Image 3" />
+          <button class="carousel-btn prev-btn">‹</button>
+          <button class="carousel-btn next-btn">›</button>
+        </div>
+      </section>
+
+      <section class="carousel-container">
+        <div class="carousel">
+          <img class="carousel-image" src="assets/icons/MovieDB/MovieDB.svg" alt="Image 4" />
+          <img class="carousel-image" src="assets/icons/MovieDB/films.png" alt="Image 4" />
+          <img class="carousel-image" src="assets/icons/MovieDB/filmdetail.png" alt="Image 5" />
+          <button class="carousel-btn prev-btn">‹</button>
+          <button class="carousel-btn next-btn">›</button>
+        </div>
+      </section>
+
+      <section class="carousel-container">
+        <div class="carousel">
+          <img class="carousel-image" src="assets/icons/devatopia/devatopia.svg" alt="devatopia" />
+          <img class="carousel-image" src="assets/icons/devatopia/personnel.png" alt="personnel de Dévatopia" />
+          <img class="carousel-image" src="assets/icons/devatopia/equipe.png"
+            alt="équipe et présentation de leurs compétences" />
+          <img class="carousel-image" src="assets/icons/devatopia/projets.png" alt="Projets réalisés" />
+          <button class="carousel-btn prev-btn">‹</button>
+          <button class="carousel-btn next-btn">›</button>
+        </div>
+      </section>
+      <section class="carousel-container">
+        <div class="carousel">
+          <img class="carousel-image" src="assets/icons/ui_ux_design/ui_ux_design.svg" alt="UI UX Design" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/homepage.png" alt="page d'accueil" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/homepage_programme.png" alt="programme" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/homepage_stats.png" alt="Statistiques" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/freelances.png" alt="freelances" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/team.png" alt="équipe" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/contact.png" alt="contact avec l'équipe" />
+          <img class="carousel-image" src="assets/icons/ui_ux_design/services.png"
+            alt="services proposés par l'entreprise" />
+          <button class="carousel-btn prev-btn">‹</button>
+          <button class="carousel-btn next-btn">›</button>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <section>
+    <h2 class="projects-title">Envie de discuter avec moi ?</h2>
+    <p class="form-intro">
+      Vous pouvez remplir le formulaire de contact ci-dessous.
+    </p>
+    <form class="contact-me-form" id="contact-me-form" action="post">
+      <div class="column-is-centered">
+        <div class="column-is-half">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" minlength="2" maxlength="50" required />
+        </div>
+        <div class="column-is-half">
+          <label for="firstname">Prénom</label>
+          <input type="firstname" name="firstname" id="firstname" minlength="2" maxlength="50" required />
+        </div>
+      </div>
+      <div class="column-is-centered">
+        <div class="column-is-half textarea">
+          <label for="details">Votre message</label>
+          <textarea name="details" id="details" minlength="10" maxlength="500" required></textarea>
+        </div>
+      </div>
+      <div class="column-is-centered button-position">
+        <button class="submit-button">Envoyer</button>
+      </div>
+    </form>
+  </section>
+  <script src="index.js"></script>
+  <script type="module" src="sendemail.js"></script>
+  <div id="loading-spinner" class="spinner" style="display: none"></div>
+</body>
+<footer>
+  <div class="flex-social-networks">
+    <a href="https://github.com/florianpoteau" class="circle-social-network">
+      <i class="fab fa-github social-network"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/florian-poteau-63a9a71a1/" class="circle-social-network">
+      <i class="fa-brands fa-linkedin-in social-network"></i>
+    </a>
+    <a href="https://www.codewars.com/users/Florianpoteau593" class="circle-social-network">
+      <img class="social-network codewars-logo" src="assets/icons/social-networks/codewars.svg" alt="codewars">
+    </a>
+    <a href="mailto:florianpoteau59@gmail.com" class="circle-social-network">
+      <i class="fa-regular fa-envelope social-network"></i>
+    </a>
+  </div>
+</footer>
+
+
+</html>
