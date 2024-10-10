@@ -33,12 +33,12 @@
   object-position: top;
   object-fit: cover;
   border-radius: 10px;
-  opacity: 0; /* Commence avec une opacité de 0 */
-  transition: opacity 0.5s ease; /* Transition pour l'opacité */
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .carousel-image.active {
-  opacity: 1; /* Opacité de 1 pour l'image active */
+  opacity: 1;
 }
 
 .carousel-btn {
