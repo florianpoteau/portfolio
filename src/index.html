@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="styles/index.scss" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     crossorigin="anonymous">
-
-
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
@@ -21,35 +19,36 @@
         <img class="avatar" src="assets/icons/avatar.svg" alt="avatar" />
       </a>
       <div class="nav-right">
-        <p>Qui suis-je ?</p>
-        <p>Mes projets</p>
-        <p>Me contacter</p>
+        <p id="me">Qui suis-je ?</p>
+        <p id="project">Mes projets</p>
+        <p id="contact">Me contacter</p>
       </div>
       <div class="cv-theme">
-        <img class="light-dark" src="assets/icons/symbole-de-temps-soleil.png" alt="light-dark-theme" />
-        <button class="download-cv">Télécharger le CV</button>
+        <a href="assets/cv/CV Florian Poteau.pdf" class="download-cv" download>Télécharger le CV</a>
       </div>
     </div>
   </nav>
-  <p class="job">Concepteur, développeur d'applications</p>
-  <p class="intro">
-    Je conçois et code des idées simples qui se démarquent, et j'aime ça.
-  </p>
-  <img class="avatar-homepage" src="assets/icons/avatar.svg" alt="avatar homepage" />
-  <img class="devices" src="assets/icons/devices.svg" alt="devices-services" />
-  <div class="container-my-description">
-    <h2>Salut, je suis Florian Poteau, ravi de te rencontrer</h2>
-    <p>
-      Ancien boulanger-pâtissier, je me suis reconverti en concepteur
-      développeur d'applications. Grâce à plusieurs formations et stages, je
-      suis capable de concevoir et de développer une application ou un site
-      web de A à Z. Curieux et perspicace, j'aime apprendre et serais ravi de
-      rejoindre une entreprise qui saura m'accueillir.
+  <section>
+    <p id="scrollToMe" class="job">Concepteur, développeur d'applications</p>
+    <p class="intro">
+      Je conçois et code des idées simples qui se démarquent, et j'aime ça.
     </p>
-  </div>
+    <img class="avatar-homepage" src="assets/icons/avatar.svg" alt="avatar homepage" />
+    <img class="devices" src="assets/icons/devices.svg" alt="devices-services" />
+    <div class="container-my-description">
+      <h2>Salut, je suis Florian Poteau, ravi de te rencontrer</h2>
+      <p>
+        Ancien boulanger-pâtissier, je me suis reconverti en concepteur
+        développeur d'applications. Grâce à plusieurs formations et stages, je
+        suis capable de concevoir et de développer une application ou un site
+        web de A à Z. Curieux et perspicace, j'aime apprendre et serais ravi de
+        rejoindre une entreprise qui saura m'accueillir.
+      </p>
+    </div>
+  </section>
   <section class="section-skills">
     <div class="flex-skills">
-      <div class="icon-skill">
+      <section class="icon-skill">
         <div class="container-image">
           <img src="assets/icons/programmation-web.svg" alt="front-end-code" />
         </div>
@@ -70,8 +69,8 @@
           <p>Bootstrap</p>
           <p>Bulma</p>
         </div>
-      </div>
-      <div class="icon-skill">
+      </section>
+      <section class="icon-skill">
         <div class="container-image">
           <img src="assets/icons/codage-back-end.svg" alt="back-end-code" />
         </div>
@@ -89,8 +88,8 @@
           <p>DiscordJS</p>
           <p>SpringBoot</p>
         </div>
-      </div>
-      <div class="icon-skill">
+      </section>
+      <section class="icon-skill">
         <div class="container-image">
           <img src="assets/icons/base-de-donnees.svg" alt="base-de-données" />
         </div>
@@ -106,11 +105,11 @@
           <p>PgAdmin</p>
           <p>MySQL Workbench</p>
         </div>
-      </div>
+      </section>
     </div>
   </section>
   <section>
-    <h2 class="projects-title">Mes projets réalisés</h2>
+    <h2 id="scrollToProject" class="projects-title">Mes projets réalisés</h2>
     <p class="some-projects">Voici quelques projets que j'ai réalisés.</p>
     <section class="carousels">
       <section class="carousel-container">
@@ -163,7 +162,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="scrollToContact">
     <h2 class="projects-title">Envie de discuter avec moi ?</h2>
     <p class="form-intro">
       Vous pouvez remplir le formulaire de contact ci-dessous.

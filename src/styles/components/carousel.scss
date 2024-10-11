@@ -68,3 +68,24 @@
 .carousel-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+@media screen and (max-width: 800px) {
+  .carousels {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    font-size: 30px;
+    padding-bottom: 13px;
+  }
+}

@@ -135,3 +135,68 @@
 .projects {
   display: flex;
 }
+
+@media screen and (max-width: 800px) {
+  .intro,
+  .form-intro {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .job {
+    font-size: 35px;
+    margin-top: 20%;
+  }
+
+  .flex-skills {
+    display: block;
+  }
+
+  .container-image {
+    margin-top: 8%;
+  }
+
+  .icon-skill {
+    border-bottom: 1.5px solid #e6ecf8;
+    border-right: none;
+    min-height: auto;
+    padding-bottom: 10%;
+  }
+
+  .icon-skill:last-child {
+    border-bottom: none;
+  }
+
+  .icon-skill h2 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .language {
+    margin-top: 7%;
+  }
+
+  .section-skills {
+    border: 1.5px solid #e6ecf8;
+  }
+
+  .form-intro {
+    margin-bottom: 10%;
+  }
+
+  .projects-title {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-my-description p {
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-my-description p {
+    margin-bottom: 30%;
+  }
+}

@@ -30,6 +30,7 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
   updateCarousel();
 });
 
+// formulaire
 const formFields = document.querySelectorAll('input, textarea');
 
 formFields.forEach((field, index) => {
@@ -47,4 +48,30 @@ formFields.forEach((field, index) => {
       }
     }
   });
+});
+
+// navbar
+
+// qui suis je
+const me = document.getElementById('me');
+const scrollToMe = document.getElementById('scrollToMe');
+
+// mes projets
+const project = document.getElementById('project');
+const scrollToProject = document.getElementById('scrollToProject');
+
+// Me contacter
+const contact = document.getElementById('contact');
+const scrollToContact = document.getElementById('scrollToContact');
+
+me.addEventListener('click', () => {
+  scrollToMe.scrollIntoView({ behavior: 'smooth' });
+});
+
+project.addEventListener('click', (e) => {
+  scrollToProject.scrollIntoView({ behavior: 'smooth' });
+});
+
+contact.addEventListener('click', (e) => {
+  scrollToContact.scrollIntoView({ behavior: 'smooth' });
 });
