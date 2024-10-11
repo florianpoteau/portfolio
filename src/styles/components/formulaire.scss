@@ -81,3 +81,13 @@ textarea:focus {
 .button-position {
   margin-top: 50px;
 }
+
+@media screen and (max-width: 800px) {
+  .contact-me-form {
+    margin: 0;
+  }
+
+  .column-is-centered {
+    width: 70%;
+  }
+}
