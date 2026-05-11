@@ -1,14 +1,14 @@
 .job {
   font-family: 'poppins-bold';
   text-align: center;
-  font-size: 40px;
+  font-size: 3rem;
   color: $text-color;
   margin-bottom: 0;
 }
 
 .intro {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-bottom: 5%;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .container-my-description h2 {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .container-my-description p {
@@ -45,7 +45,7 @@
   width: 68%;
   line-height: 2;
   padding-top: 1%;
-  font-size: 18px;
+  font-size:  1.5rem;
   margin-bottom: 10%;
 }
 
@@ -104,8 +104,12 @@
   font-family: 'poppins-bold';
   margin-top: 6%;
   margin-bottom: 8%;
-  font-size: 20px;
+  font-size: 2rem;
   color: $text-color;
+}
+
+.icon-skill p {
+  font-size: 1.3rem;
 }
 
 .language {
@@ -122,18 +126,57 @@
 
 .projects-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 2.5rem;
   margin-top: 10%;
 }
 
 .some-projects,
 .form-intro {
   text-align: center;
-  font-size: 17px;
+  font-size: 1.5rem;
 }
 
 .projects {
   display: flex;
+}
+
+@media screen and (max-width: 1500px) {
+.job{
+  font-size: 2rem;
+}
+
+.intro{
+  font-size: 1rem;
+}
+
+.projects-title {
+  font-size: 1.5rem;
+}
+
+.some-projects,
+.form-intro {
+  font-size: 1rem;
+}
+}
+
+.container-my-description h2 {
+  font-size: 1.5rem;
+}
+
+.container-my-description p {
+  font-size:  1rem;
+}
+
+.icon-skill h2 {
+  font-family: 'poppins-bold';
+  margin-top: 6%;
+  margin-bottom: 8%;
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+.icon-skill p {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -199,4 +242,5 @@
   .container-my-description p {
     margin-bottom: 30%;
   }
+  
 }
