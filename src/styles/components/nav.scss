@@ -6,6 +6,7 @@
   margin-top: 2.5%;
   margin-right: 5%;
   margin-bottom: 130px;
+  font-size: 1.5rem;
 }
 
 .nav-right {
@@ -36,7 +37,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: 55%;
-  font-size: 15px;
+  font-size: 1.5rem;
   background-color: var(--body-backgroundColor);
   border: 2px solid $primary-color;
   cursor: pointer;
@@ -62,6 +63,14 @@
   justify-content: right;
   gap: 10%;
 }
+
+@media screen and (max-width: 1500px) {
+.nav-container{
+  font-size: 1rem;
+}
+.download-cv {
+  font-size: 1rem;
+}}
 
 @media screen and (max-width: 800px) {
   nav {
