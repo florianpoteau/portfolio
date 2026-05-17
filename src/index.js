@@ -75,3 +75,22 @@ project.addEventListener('click', (e) => {
 contact.addEventListener('click', (e) => {
   scrollToContact.scrollIntoView({ behavior: 'smooth' });
 });
+
+// Animations
+
+const devices = document.querySelector('.devices');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+observer.observe(devices);
