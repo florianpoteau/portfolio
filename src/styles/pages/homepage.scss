@@ -31,6 +31,11 @@
   transform: translateY(-120px);
 }
 
+.hidden-container {
+  opacity: 0;
+  transform: translateY(120px);
+}
+
 .show {
   opacity: 1;
   transform: translateY(0);
@@ -38,7 +43,9 @@
 
 .container-my-description {
   background-color: $primary-color;
-  padding: 9% 5% 15% 5%;
+  padding: 9% 5% 10% 5%;
+  transition: all 0.8s ease-out;
+  z-index: 1;
 }
 
 .container-my-description h2,
@@ -61,6 +68,7 @@
 }
 
 .section-skills {
+  position: relative;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -71,6 +79,7 @@
   min-height: 750px;
   border: 0.5px solid #e6ecf8;
   margin-bottom: 50px;
+  z-index: 10;
 }
 
 .flex-skills {

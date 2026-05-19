@@ -79,18 +79,24 @@ contact.addEventListener('click', (e) => {
 // Animations
 
 const devices = document.querySelector('.devices');
+const containerMyDescription = document.querySelector(
+  '.container-my-description'
+);
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
+      console.log(entry.target.className, entry.isIntersecting);
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
+        observer.unobserve(entry.target);
       }
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.1,
   }
 );
 
 observer.observe(devices);
+observer.observe(containerMyDescription);
