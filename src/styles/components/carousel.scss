@@ -13,6 +13,24 @@
   margin-bottom: 7%;
   width: 43%;
   position: relative;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.carousel-container-left {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+
+.carousel-container-right {
+  opacity: 0;
+  transform: translateX(300px);
+}
+
+.show-container {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .carousel {

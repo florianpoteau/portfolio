@@ -86,7 +86,6 @@ const containerMyDescription = document.querySelector(
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      console.log(entry.target.className, entry.isIntersecting);
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
         observer.unobserve(entry.target);
@@ -97,6 +96,24 @@ const observer = new IntersectionObserver(
     threshold: 0.1,
   }
 );
+
+const carouselContainers = document.querySelectorAll('.carousel-container');
+
+const observerX = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show-container');
+        observerX.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+carouselContainers.forEach((el) => observerX.observe(el));
 
 observer.observe(devices);
 observer.observe(containerMyDescription);
