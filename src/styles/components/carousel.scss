@@ -23,6 +23,11 @@
   transform: translateX(-300px);
 }
 
+.carousel-container-right {
+  opacity: 0;
+  transform: translateX(300px);
+}
+
 .show-container {
   opacity: 1;
   transform: translateX(0);
